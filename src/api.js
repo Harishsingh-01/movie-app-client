@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api", // adjust if hosted elsewhere
+  baseURL: "https://movie-app-backend-2tf5.onrender.com/api", // updated to deployed backend URL
   headers: {
     'Content-Type': 'application/json',
   },
