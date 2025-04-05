@@ -35,7 +35,7 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        py: { xs: 3, sm: 4, md: 6 },
+        py: { xs: 2, sm: 3, md: 4 },
         px: 2,
         mt: 'auto',
         backgroundColor: 'background.paper',
@@ -49,7 +49,7 @@ const Footer = () => {
           top: 0,
           left: 0,
           right: 0,
-          height: '4px',
+          height: '3px',
           background: 'linear-gradient(90deg, #1976d2, #64b5f6)'
         }
       }}
@@ -60,7 +60,7 @@ const Footer = () => {
           position: 'absolute',
           bottom: 0,
           right: 0,
-          width: '40%',
+          width: '30%',
           height: '100%',
           background: 'linear-gradient(135deg, rgba(25, 118, 210, 0.05) 0%, rgba(25, 118, 210, 0) 100%)',
           clipPath: 'polygon(100% 0, 100% 100%, 0 100%, 100% 0)',
@@ -69,13 +69,13 @@ const Footer = () => {
       />
 
       <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
-        <Grid container spacing={{ xs: 3, sm: 4 }}>
+        <Grid container spacing={{ xs: 2, sm: 3 }}>
           {/* Logo and Description */}
           <Grid item xs={12} md={4}>
-            <Box sx={{ display: 'flex', alignItems: 'center', mb: { xs: 1, sm: 2 } }}>
-              <MovieIcon sx={{ fontSize: { xs: 24, sm: 28 }, color: 'primary.main', mr: 1 }} />
+            <Box sx={{ display: 'flex', alignItems: 'center', mb: { xs: 0.5, sm: 1 } }}>
+              <MovieIcon sx={{ fontSize: { xs: 20, sm: 24 }, color: 'primary.main', mr: 1 }} />
               <Typography
-                variant={isMobile ? "subtitle1" : "h6"}
+                variant={isMobile ? "subtitle2" : "subtitle1"}
                 sx={{
                   fontWeight: 'bold',
                   letterSpacing: '0.5px',
@@ -88,7 +88,7 @@ const Footer = () => {
                 FilmyYatra
               </Typography>
             </Box>
-            <Typography variant="body2" color="text.secondary" sx={{ mb: { xs: 1, sm: 2 }, fontSize: { xs: '0.8rem', sm: '0.875rem' } }}>
+            <Typography variant="body2" color="text.secondary" sx={{ mb: { xs: 0.5, sm: 1 }, fontSize: { xs: '0.7rem', sm: '0.75rem' } }}>
               Your ultimate destination for movie recommendations. Discover new films based on your preferences and enjoy a personalized movie-watching experience.
             </Typography>
             <Box sx={{ display: 'flex', gap: 0.5 }}>
@@ -97,7 +97,7 @@ const Footer = () => {
                 sx={{ 
                   color: 'text.secondary',
                   '&:hover': { color: 'primary.main' },
-                  p: { xs: 0.5, sm: 1 }
+                  p: { xs: 0.25, sm: 0.5 }
                 }}
                 aria-label="Facebook"
               >
@@ -108,7 +108,7 @@ const Footer = () => {
                 sx={{ 
                   color: 'text.secondary',
                   '&:hover': { color: 'primary.main' },
-                  p: { xs: 0.5, sm: 1 }
+                  p: { xs: 0.25, sm: 0.5 }
                 }}
                 aria-label="Twitter"
               >
@@ -119,7 +119,7 @@ const Footer = () => {
                 sx={{ 
                   color: 'text.secondary',
                   '&:hover': { color: 'primary.main' },
-                  p: { xs: 0.5, sm: 1 }
+                  p: { xs: 0.25, sm: 0.5 }
                 }}
                 aria-label="Instagram"
               >
@@ -130,7 +130,7 @@ const Footer = () => {
                 sx={{ 
                   color: 'text.secondary',
                   '&:hover': { color: 'primary.main' },
-                  p: { xs: 0.5, sm: 1 }
+                  p: { xs: 0.25, sm: 0.5 }
                 }}
                 aria-label="GitHub"
               >
@@ -141,7 +141,7 @@ const Footer = () => {
                 sx={{ 
                   color: 'text.secondary',
                   '&:hover': { color: 'primary.main' },
-                  p: { xs: 0.5, sm: 1 }
+                  p: { xs: 0.25, sm: 0.5 }
                 }}
                 aria-label="LinkedIn"
               >
@@ -152,10 +152,10 @@ const Footer = () => {
 
           {/* Quick Links */}
           <Grid item xs={6} sm={6} md={4}>
-            <Typography variant={isMobile ? "subtitle2" : "h6"} color="white" gutterBottom sx={{ mb: { xs: 1, sm: 2 } }}>
+            <Typography variant={isMobile ? "subtitle2" : "subtitle1"} color="white" gutterBottom sx={{ mb: { xs: 0.5, sm: 1 } }}>
               Quick Links
             </Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: { xs: 0.5, sm: 1 } }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: { xs: 0.25, sm: 0.5 } }}>
               <Link 
                 to="/" 
                 style={{ 
@@ -165,8 +165,8 @@ const Footer = () => {
                   alignItems: 'center'
                 }}
               >
-                <HomeIcon sx={{ fontSize: { xs: 14, sm: 16 }, mr: 0.5, color: 'primary.main' }} />
-                <Typography variant="body2" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' }, fontSize: { xs: '0.75rem', sm: '0.875rem' } }}>
+                <HomeIcon sx={{ fontSize: { xs: 12, sm: 14 }, mr: 0.5, color: 'primary.main' }} />
+                <Typography variant="body2" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' }, fontSize: { xs: '0.7rem', sm: '0.75rem' } }}>
                   Home
                 </Typography>
               </Link>
@@ -179,8 +179,8 @@ const Footer = () => {
                   alignItems: 'center'
                 }}
               >
-                <SearchIcon sx={{ fontSize: { xs: 14, sm: 16 }, mr: 0.5, color: 'primary.main' }} />
-                <Typography variant="body2" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' }, fontSize: { xs: '0.75rem', sm: '0.875rem' } }}>
+                <SearchIcon sx={{ fontSize: { xs: 12, sm: 14 }, mr: 0.5, color: 'primary.main' }} />
+                <Typography variant="body2" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' }, fontSize: { xs: '0.7rem', sm: '0.75rem' } }}>
                   Browse Movies
                 </Typography>
               </Link>
@@ -193,8 +193,8 @@ const Footer = () => {
                   alignItems: 'center'
                 }}
               >
-                <InfoIcon sx={{ fontSize: { xs: 14, sm: 16 }, mr: 0.5, color: 'primary.main' }} />
-                <Typography variant="body2" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' }, fontSize: { xs: '0.75rem', sm: '0.875rem' } }}>
+                <InfoIcon sx={{ fontSize: { xs: 12, sm: 14 }, mr: 0.5, color: 'primary.main' }} />
+                <Typography variant="body2" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' }, fontSize: { xs: '0.7rem', sm: '0.75rem' } }}>
                   About Me
                 </Typography>
               </Link>
@@ -207,8 +207,8 @@ const Footer = () => {
                   alignItems: 'center'
                 }}
               >
-                <RecommendIcon sx={{ fontSize: { xs: 14, sm: 16 }, mr: 0.5, color: 'primary.main' }} />
-                <Typography variant="body2" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' }, fontSize: { xs: '0.75rem', sm: '0.875rem' } }}>
+                <RecommendIcon sx={{ fontSize: { xs: 12, sm: 14 }, mr: 0.5, color: 'primary.main' }} />
+                <Typography variant="body2" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' }, fontSize: { xs: '0.7rem', sm: '0.75rem' } }}>
                   Recommendations
                 </Typography>
               </Link>
@@ -221,8 +221,8 @@ const Footer = () => {
                   alignItems: 'center'
                 }}
               >
-                <PersonIcon sx={{ fontSize: { xs: 14, sm: 16 }, mr: 0.5, color: 'primary.main' }} />
-                <Typography variant="body2" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' }, fontSize: { xs: '0.75rem', sm: '0.875rem' } }}>
+                <PersonIcon sx={{ fontSize: { xs: 12, sm: 14 }, mr: 0.5, color: 'primary.main' }} />
+                <Typography variant="body2" color="text.secondary" sx={{ '&:hover': { color: 'primary.main' }, fontSize: { xs: '0.7rem', sm: '0.75rem' } }}>
                   Profile
                 </Typography>
               </Link>
@@ -231,24 +231,24 @@ const Footer = () => {
 
           {/* Contact Info */}
           <Grid item xs={6} sm={6} md={4}>
-            <Typography variant={isMobile ? "subtitle2" : "h6"} color="white" gutterBottom sx={{ mb: { xs: 1, sm: 2 } }}>
+            <Typography variant={isMobile ? "subtitle2" : "subtitle1"} color="white" gutterBottom sx={{ mb: { xs: 0.5, sm: 1 } }}>
               Contact Us
             </Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: { xs: 0.5, sm: 1 } }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: { xs: 0.25, sm: 0.5 } }}>
               <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                <EmailIcon sx={{ fontSize: { xs: 14, sm: 16 }, mr: 0.5, color: 'primary.main' }} />
-                <Typography variant="body2" color="text.secondary" sx={{ fontSize: { xs: '0.75rem', sm: '0.875rem' } }}>
+                <EmailIcon sx={{ fontSize: { xs: 12, sm: 14 }, mr: 0.5, color: 'primary.main' }} />
+                <Typography variant="body2" color="text.secondary" sx={{ fontSize: { xs: '0.7rem', sm: '0.75rem' } }}>
                   harishtaliyan@gmail.com
                 </Typography>
               </Box>
-              <Typography variant="body2" color="text.secondary" sx={{ mt: { xs: 1, sm: 2 }, fontSize: { xs: '0.75rem', sm: '0.875rem' } }}>
+              <Typography variant="body2" color="text.secondary" sx={{ mt: { xs: 0.5, sm: 1 }, fontSize: { xs: '0.7rem', sm: '0.75rem' } }}>
                 Have questions or feedback? We'd love to hear from you!
               </Typography>
             </Box>
           </Grid>
         </Grid>
 
-        <Divider sx={{ my: { xs: 2, sm: 3, md: 4 }, borderColor: 'rgba(255, 255, 255, 0.1)' }} />
+        <Divider sx={{ my: { xs: 1.5, sm: 2, md: 3 }, borderColor: 'rgba(255, 255, 255, 0.1)' }} />
 
         {/* Copyright */}
         <Box sx={{ 
@@ -256,15 +256,15 @@ const Footer = () => {
           flexDirection: { xs: 'column', sm: 'row' }, 
           justifyContent: 'space-between', 
           alignItems: { xs: 'center', sm: 'center' }, 
-          gap: { xs: 1, sm: 0 }
+          gap: { xs: 0.5, sm: 0 }
         }}>
-          <Typography variant="body2" color="text.secondary" sx={{ fontSize: { xs: '0.7rem', sm: '0.75rem', md: '0.875rem' } }}>
+          <Typography variant="body2" color="text.secondary" sx={{ fontSize: { xs: '0.65rem', sm: '0.7rem', md: '0.75rem' } }}>
             © {currentYear} FilmyYatra. All rights reserved.
           </Typography>
           <Typography variant="body2" color="text.secondary" sx={{ 
             display: 'flex', 
             alignItems: 'center',
-            fontSize: { xs: '0.7rem', sm: '0.75rem', md: '0.875rem' }
+            fontSize: { xs: '0.65rem', sm: '0.7rem', md: '0.75rem' }
           }}>
             <span>Created with ❤️ by</span>
             <Typography 
